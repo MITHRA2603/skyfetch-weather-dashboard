@@ -1,0 +1,57 @@
+
+#forecastSection {
+    margin-top: 30px;
+}
+
+#forecastSection h2 {
+    color: #764ba2;
+    margin-bottom: 15px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.forecast-card {
+    background: #f4f0fb;
+    border-radius: 12px;
+    padding: 12px 5px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+}
+
+.forecast-card h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.forecast-card img {
+    width: 55px;
+    height: 55px;
+}
+
+.forecast-card .forecast-temp {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.forecast-card .forecast-description {
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+    .weather-card {
+        padding: 20px;
+    }
+
+    .forecast-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
