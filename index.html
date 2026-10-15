@@ -13,17 +13,19 @@
         <p class="subtitle">Your Daily Weather Companion</p>
 
         <div class="search-box">
-            <input
-                type="text"
-                id="cityInput"
-                placeholder="Enter city name..."
-            >
+            <input type="text" id="cityInput"
+                   placeholder="Enter city name...">
             <button id="searchBtn">Search</button>
         </div>
 
         <div id="weather">
             <p>Search for a city to see its weather!</p>
         </div>
+
+        <section id="forecastSection" hidden>
+            <h2>5-Day Forecast</h2>
+            <div id="forecast" class="forecast-grid"></div>
+        </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
