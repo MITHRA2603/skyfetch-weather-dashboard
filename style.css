@@ -1,0 +1,157 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  color: #25244a;
+  background: linear-gradient(135deg, #c4d9ff, #e8d9ff, #fce4ec);
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(40, 40, 90, 0.12);
+}
+
+h1, .subtitle {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 8px;
+  color: #5145b5;
+}
+
+.subtitle {
+  color: #666;
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin: 28px 0;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#searchBtn {
+  color: white;
+  background: #6256c8;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.recent-searches-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.recent-city-btn {
+  color: #44389b;
+  background: #e9e6ff;
+}
+
+#clearHistoryBtn {
+  color: #9b2525;
+  background: #ffe6e6;
+}
+
+.weather-card {
+  margin: 20px 0;
+  padding: 24px;
+  text-align: center;
+  background: #f1f0ff;
+  border-radius: 16px;
+}
+
+.weather-card img {
+  width: 100px;
+}
+
+.temperature {
+  margin: 8px 0;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.forecast-card {
+  padding: 12px 6px;
+  text-align: center;
+  background: #f1f0ff;
+  border-radius: 14px;
+}
+
+.forecast-card img {
+  width: 65px;
+  max-width: 100%;
+}
+
+.forecast-temp {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.error {
+  color: #b42318;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 12px;
+  }
+
+  .dashboard {
+    padding: 18px;
+  }
+
+  .forecast-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .search-section {
+    flex-direction: column;
+  }
+}
