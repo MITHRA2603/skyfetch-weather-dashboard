@@ -10,9 +10,19 @@
 <body>
     <div class="weather-card">
         <h1>SkyFetch</h1>
-        <p>Your Daily Weather Companion</p>
+        <p class="subtitle">Your Daily Weather Companion</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
         <div id="weather">
-            <p>Loading weather...</p>
+            <p>Search for a city to see its weather!</p>
         </div>
     </div>
 
